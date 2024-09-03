@@ -1,6 +1,7 @@
 import React from "react";
 import { CiSearch } from "react-icons/ci";
 import LeftSide from "./LeftSide";
+import { Circle, Wave, Dots } from "./index";
 
 const Home = () => {
   return (
@@ -8,7 +9,8 @@ const Home = () => {
       <div className="container flex justify-between items-center w-full mx-auto h-full">
         <div className="relative lg:w-1/2 px-2">
           <div className="absolute -top-20 right-14 sm:right-10">
-            <img src="/src/assets/Circle.png" alt="wave" width={30} />
+            {/* <img src="/src/assets/Circle.png" alt="wave" width={30} /> */}
+            <img src={Circle} alt="wave" width={30} />
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-blue-600 mb-2">
             We Provide Best
@@ -40,10 +42,12 @@ const Home = () => {
           </div>
 
           <div className="absolute -bottom-28 left-20">
-            <img src="/src/assets/wave.png" alt="wave" />
+            {/* <img src="/src/assets/wave.png" alt="wave" /> */}
+            <img src={Wave} alt="wave" />
           </div>
           <div className="absolute -bottom-28 right-10">
-            <img src="/src/assets/Dots.png" alt="wave" width={60} height={30} />
+            <img src={Dots} alt="wave" width={60} height={30} />
+            {/* <img src="/src/assets/Dots.png" alt="wave" width={60} height={30} /> */}
           </div>
         </div>
         <div className="lg:w-1/2 hidden lg:block h-full">
