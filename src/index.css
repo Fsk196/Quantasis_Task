@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .nav-link {
+    @apply relative text-blue-600 transition-colors duration-300; /* Default color and transition */
+  }
+
+  .nav-link.overlap {
+    @apply text-white; /* Change text color to white when overlapping */
+  }
+
+  /*  */
+}
